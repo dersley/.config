@@ -1,0 +1,13 @@
+# Ignore all files/folders by default
+*
+
+# Include .gitignore
+!.gitignore
+
+# Add desired config folders
+!/alacritty/
+!/alacritty/**/*
+!/nvim/
+!/nvim/**/*
+!/tmux/
+!/tmux/**/*
