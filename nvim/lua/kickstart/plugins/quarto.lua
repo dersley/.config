@@ -8,10 +8,10 @@ return {
     },
     config = function()
       -- Normal mode: Run QuartoPreview
-      vim.keymap.set('n', '<leader>qp', ':QuartoPreview<CR>', { desc = 'Open Quarto [P]review', noremap = true, silent = true })
+      vim.keymap.set('n', '<leader>qo', ':QuartoPreview<CR>', { desc = '[Q]uarto: [O]pen Preview', noremap = true, silent = true })
 
       -- Normal mode: Insert a Python code block
-      vim.keymap.set('n', '<leader>qi', function()
+      vim.keymap.set('n', '<leader>qp', function()
         local lines = {
           '```{python}',
           '',
@@ -19,7 +19,7 @@ return {
         }
         vim.api.nvim_put(lines, 'l', true, true)
         vim.cmd 'normal! k' -- move cursor inside the block
-      end, { desc = 'Insert [P]ython code block', noremap = true, silent = true })
+      end, { desc = '[Q]uarto: [P]ython code block', noremap = true, silent = true })
 
       -- Normal mode: Insert a mermaid code block
       vim.keymap.set('n', '<leader>qm', function()
@@ -30,7 +30,7 @@ return {
         }
         vim.api.nvim_put(lines, 'l', true, true)
         vim.cmd 'normal! k' -- move cursor inside the block
-      end, { desc = 'Insert [M]ermaid code block', noremap = true, silent = true })
+      end, { desc = '[Q]uarto: [M]ermaid code block', noremap = true, silent = true })
     end,
   },
 }
