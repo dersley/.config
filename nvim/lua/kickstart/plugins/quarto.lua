@@ -31,6 +31,21 @@ return {
         vim.api.nvim_put(lines, 'l', true, true)
         vim.cmd 'normal! k' -- move cursor inside the block
       end, { desc = '[Q]uarto: [M]ermaid code block', noremap = true, silent = true })
+
+      -- Normal mode: Insert a blogpost YAML header
+      vim.keymap.set('n', '<leader>qh', function()
+        local lines = {
+          '---',
+          'title:',
+          'subtitle:',
+          'author: "Nicholas Dorsch"',
+          'date: today',
+          'categories:',
+          '---',
+        }
+        vim.api.nvim_put(lines, 'l', true, true)
+        vim.cmd 'normal! k' -- move cursor inside the block
+      end, { desc = '[Q]uarto: YAML [H]eader', noremap = true, silent = true })
     end,
   },
 }
