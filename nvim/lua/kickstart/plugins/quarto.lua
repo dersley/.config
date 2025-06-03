@@ -46,6 +46,19 @@ return {
         vim.api.nvim_put(lines, 'l', true, true)
         vim.cmd 'normal! k' -- move cursor inside the block
       end, { desc = '[Q]uarto: YAML [H]eader', noremap = true, silent = true })
+
+      -- Normal mode: Insert an aligned Latex equation
+      vim.keymap.set('n', '<leader>qe', function()
+        local lines = {
+          '$$',
+          '\\begin{align}',
+          '',
+          '\\end{align}',
+          '$$',
+        }
+        vim.api.nvim_put(lines, 'l', true, true)
+        vim.cmd 'normal! k' -- move cursor inside the block
+      end, { desc = '[Q]uarto: Latex [E]quation', noremap = true, silent = true })
     end,
   },
 }
