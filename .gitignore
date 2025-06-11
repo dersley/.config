@@ -11,3 +11,5 @@
 !/nvim/**/*
 !/tmux/
 !/tmux/**/*
+!/zellij/
+!/zellij/**/*
