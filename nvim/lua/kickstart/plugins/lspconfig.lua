@@ -212,10 +212,20 @@ return {
           settings = {
             pylsp = {
               plugins = {
-                pylint = { enabled = true, maxLineLength = 88 },
-                pycodestyle = { enabled = true, maxLineLength = 88 },
-                pyflakes = { enabled = true },
-                yapf = { enabled = true, maxLineLength = 88 },
+                -- formatter options
+                black = { enabled = true },
+                autopep8 = { enabled = false },
+                yapf = { enabled = false },
+                -- linter options
+                pylint = { enabled = true, executable = 'pylint' },
+                pyflakes = { enabled = false },
+                pycodestyle = { enabled = false },
+                -- type checker
+                pylsp_mypy = { enabled = true },
+                -- auto-completion options
+                jedi_completion = { fuzzy = true },
+                -- import sorting
+                pyls_isort = { enabled = true },
               },
             },
           },
