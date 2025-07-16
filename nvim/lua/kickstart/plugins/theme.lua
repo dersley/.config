@@ -1,25 +1,16 @@
 return {
-  'catppuccin/nvim',
-  name = 'catppuccin',
+  'navarasu/onedark.nvim',
   priority = 1000,
   config = function()
-    require('catppuccin').setup {
-      flavour = 'mocha', -- latte, frappe, macchiato, mocha
-      transparent_background = true,
-      integrations = {
-        treesitter = true,
-        lsp_saga = true,
-        mason = true,
-        cmp = true,
-        gitsigns = true,
-        telescope = true,
-        which_key = true,
-        native_lsp = {
-          enabled = true,
-        },
+    require('onedark').setup {
+      style = 'dark',
+      transparent = true,
+      diagnostics = {
+        background = false,
       },
     }
-    -- Apply the colorscheme
-    vim.cmd.colorscheme 'catppuccin'
+
+    -- Enable theme
+    require('onedark').load()
   end,
 }
