@@ -8,7 +8,7 @@ return {
       columns = {
         "icon",
         -- "permissions",
-        "size",
+        -- "size",
       },
 
       -- Buffer-local options to use for oil buffers
@@ -59,7 +59,7 @@ return {
 
       view_options = {
         -- Show files and directories that start with "."
-        show_hidden = false,
+        show_hidden = true,
 
         -- This function defines what is considered a "hidden" file
         is_hidden_file = function(name, bufnr)
@@ -87,7 +87,7 @@ return {
         height = nil,
         border = "rounded",
         win_options = {
-          winblend = 0,
+          winblend = 20,
         },
       },
 
@@ -98,7 +98,7 @@ return {
         max_height = 0,
         border = "rounded",
         win_options = {
-          winblend = 10,
+          winblend = 20,
         },
       },
     })

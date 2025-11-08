@@ -8,7 +8,7 @@ return {
       term_colors = true,
       ending_tildes = false,
       cmp_itemkind_reverse = false,
-      
+
       -- Change code style
       code_style = {
         comments = "italic",
@@ -17,7 +17,7 @@ return {
         strings = "none",
         variables = "none",
       },
-      
+
       -- Lualine options
       lualine = {
         transparent = false,

@@ -35,3 +35,11 @@ keymap.set("v", "K", ":m '<-2<CR>gv=gv", { desc = "Move text up" })
 -- Stay in indent mode
 keymap.set("v", "<", "<gv", { desc = "Indent left" })
 keymap.set("v", ">", ">gv", { desc = "Indent right" })
+
+-- Center screen after search navigation
+keymap.set("n", "n", "nzz", { desc = "Next search result (centered)" })
+keymap.set("n", "N", "Nzz", { desc = "Previous search result (centered)" })
+
+-- Center screen after scrolling
+keymap.set("n", "<C-d>", "<C-d>zz", { desc = "Scroll down (centered)" })
+keymap.set("n", "<C-u>", "<C-u>zz", { desc = "Scroll up (centered)" })
