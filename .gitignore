@@ -9,6 +9,8 @@
 !/alacritty/**/*
 !/nvim/
 !/nvim/**/*
+!/ghostty/
+!/ghostty/**/*
 !/tmux/
 !/tmux/**/*
 !/zellij/
