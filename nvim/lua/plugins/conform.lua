@@ -38,7 +38,6 @@ return {
 				lua = { "stylua" },
 				rust = { "rustfmt" },
 				go = { "gofmt" },
-				sql = { "sql_formatter" },
 				sh = { "shfmt" },
 			},
 			-- Format on save
