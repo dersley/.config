@@ -12,9 +12,9 @@ decorations = "none"
 opacity = 0.90
 
 [font]
-normal = { family = "Iosevka NFM", style = "Regular" }
-bold = { family = "Iosevka NFM", style = "Bold" }
-italic = { family = "Iosevka NFM", style = "Italic" }
-bold_italic = { family = "Iosevka NFM", style = "Bold Italic" }
+normal = { family = "Iosevka NF", style = "Regular" }
+bold = { family = "Iosevka NF", style = "Bold" }
+italic = { family = "Iosevka NF", style = "Italic" }
+bold_italic = { family = "Iosevka NF", style = "Bold Italic" }
 size = 12
 
