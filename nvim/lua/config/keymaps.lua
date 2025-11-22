@@ -43,3 +43,12 @@ keymap.set("n", "N", "Nzz", { desc = "Previous search result (centered)" })
 -- Center screen after scrolling
 keymap.set("n", "<C-d>", "<C-d>zz", { desc = "Scroll down (centered)" })
 keymap.set("n", "<C-u>", "<C-u>zz", { desc = "Scroll up (centered)" })
+
+
+-- Plugins
+
+-- Oil
+keymap.set("n", "<leader>o", "<cmd>Oil<CR>", { desc = "Open parent directory" })
+
+-- Dadbod
+keymap.set("n", "<leader>b", "<cmd>DBUIToggle<CR>", { desc = "Toggle Dadbod UI" })
