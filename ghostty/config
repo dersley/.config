@@ -1,7 +1,7 @@
 theme = One Half Dark
-font-family = Iosevka NF
+font-family = JetBrainsMono NFM
 font-size = 12
-background-opacity = 0.98
+background-opacity = 0.90
 window-theme = ghostty
 
 shell-integration = bash
