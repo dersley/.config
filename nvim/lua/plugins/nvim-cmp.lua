@@ -7,11 +7,6 @@ return {
     "hrsh7th/cmp-nvim-lsp",     -- source for LSP
     "L3MON4D3/LuaSnip",         -- snippet engine
     "saadparwaiz1/cmp_luasnip", -- for autocompletion
-
-    -- For dadbod
-    "kristijanhusak/vim-dadbod",
-    "kristijanhusak/vim-dadbod-ui",
-    "kristijanhusak/vim-dadbod-completion",
   },
   config = function()
     local cmp = require("cmp")
@@ -43,8 +38,15 @@ return {
         { name = "luasnip" },
         { name = "buffer" },
         { name = "path" },
-        { name = "dadbod" },
       }),
+    })
+
+    -- Setup dadbod
+    cmp.setup.filetype({ "sql" }, {
+      sources = {
+        { name = "vim-dadbod-completion" },
+        { name = "buffer" },
+      },
     })
   end,
 }
